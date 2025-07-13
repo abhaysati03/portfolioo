@@ -1,0 +1,127 @@
+
+.about-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 72px 32px;
+  background-color: #ffffff;
+  font-family: 'SamsungOne', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* === Main Content Card === */
+.about-content {
+  background-color: #ffffff;
+  padding: 56px 64px;
+  max-width: 960px;
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* === Header === */
+.about-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  /* margin-bottom: 11px; */
+  text-align: center;
+  letter-spacing: -0.3px;
+  position: relative;
+}
+
+.about-content h1::after {
+  content: "";
+  display: block;
+  margin: 12px auto 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 50px;
+}
+
+/* === Timeline Step Items === */
+.about-step {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 36px;
+}
+
+.about-step::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #1f6feb, #43c6f9);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #ffffff;
+}
+
+.about-step::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 24px;
+  width: 2px;
+  height: calc(100% - 24px);
+  background-color: #d1d5db;
+}
+
+.about-step:last-child::after {
+  display: none;
+}
+
+/* === Timeline Text === */
+.about-step p {
+  font-size: 1.125rem;
+  color: #374151;
+  line-height: 1.75;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.about-step p strong {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* === Samsung Clean Accent Hover (optional for interactivity) === */
+.about-step:hover p {
+  color: #111827;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 48px 20px;
+  }
+
+  .about-content {
+    padding: 36px 24px;
+    border-radius: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-step {
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .about-step::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .about-step p {
+    font-size: 1rem;
+  }
+}

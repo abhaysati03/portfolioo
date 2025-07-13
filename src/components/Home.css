@@ -1,0 +1,172 @@
+/* src/components/Home.css */
+
+:root {
+  --primary-color: #f10000;       /* Xiaomi Orange */
+  --accent-color: #111827;        /* Deep Gray */
+  --subtext-color: #4b5563;       /* Neutral Gray */
+  --background-color: #ffffff;
+  --section-background: #f8f9fa;
+  --border-color: #e5e7eb;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: var(--accent-color);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* === Welcome Section === */
+
+.welcome-section {
+  text-align: center;
+  padding: 3rem 1rem 5rem;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--subtext-color);
+  max-width: 850px;
+  margin: 0.75rem auto;
+}
+
+/* === Highlights Section === */
+
+.highlight-section {
+  padding: 3rem 0;
+  background-color: var(--section-background);
+  border-radius: 30px;
+}
+
+.highlight-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+}
+
+.highlight-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 0 1rem;
+}
+
+.highlight-item {
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+}
+
+.highlight-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary-color);
+  transition: width 0.25s ease-in-out;
+}
+
+.highlight-item:hover::before {
+  width: 100%;
+}
+
+.highlight-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-item p {
+  font-size: 1rem;
+  color: var(--subtext-color);
+  line-height: 1.6;
+}
+
+/* === Quote Section === */
+
+.quote-section {
+  margin: 5rem auto 2rem;
+  max-width: 800px;
+  background-color: #fefefe;
+  border-left: 5px solid var(--primary-color);
+  padding: 2rem;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--subtext-color);
+  line-height: 1.8;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--accent-color);
+  text-align: right;
+}
+
+/* === Responsive Typography === */
+
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .highlight-list {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+  }
+
+  .highlight-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .highlight-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.95rem;
+  }
+
+  .quote-section {
+    font-size: 1.05rem;
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,127 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  font-family: 'SamsungOne', 'Segoe UI', 'Roboto', sans-serif;
+  color: #1a1a1a;
+  line-height: 1.7;
+  letter-spacing: 0.25px;
+}
+
+/* === Main Resume Container === */
+.gow-resume {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 48px 32px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e4e7ec;
+  overflow: hidden;
+}
+
+/* === Header === */
+.gow-header {
+  text-align: center;
+  border-bottom: 1px solid #c7ccd4;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.gow-header h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #1b1f24;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.gow-header p {
+  font-size: 1rem;
+  color: #4f5a67;
+}
+
+.gow-header a {
+  color: #007aff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 6px;
+  display: block;
+}
+
+.date{
+  margin-left: 40px;
+}
+/* === Section Titles === */
+.gow-section {
+  margin-bottom: 48px;
+}
+
+.gow-section h2 {
+  font-size: 1.5rem;
+  color: #111;
+  font-weight: 600;
+  padding-left: 12px;
+  border-left: 4px solid #007aff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.gow-technical {
+  margin-bottom: 24px;
+  padding-left: 16px;
+}
+
+.gow-block {
+  margin-bottom: 24px;
+  padding-left: 16px;
+  border-left: 2px solid #d3d7dd;
+}
+
+.gow-block strong {
+  font-weight: 600;
+  color: #1c1c1c;
+  display: block;
+}
+
+.gow-block .date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.gow-block ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.gow-block li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #2c2c2c;
+  list-style-type: disc;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .gow-resume {
+    padding: 28px 16px;
+  }
+
+  .gow-header h1 {
+    font-size: 2rem;
+  }
+
+  .gow-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .gow-block li {
+    font-size: 0.95rem;
+  }
+}
+.gow-lang {
+  margin-bottom: 24px;
+  padding-left: 16px;
+}

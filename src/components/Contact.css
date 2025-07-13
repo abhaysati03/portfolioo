@@ -1,0 +1,131 @@
+:root {
+  --primary: #0f172a;
+  --accent: #2563eb;
+  --light-bg: #f9fafb;
+  --white: #ffffff;
+  --gray: #6b7280;
+  --font-heading: "Segoe UI", "Inter", sans-serif;
+  --font-body: "Inter", "Roboto", sans-serif;
+}
+
+.contact-section {
+  padding: 80px 20px;
+  background-color: var(--light-bg);
+  font-family: var(--font-body);
+  color: var(--primary);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: var(--font-heading);
+  color: var(--primary);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.intro-letter {
+  flex: 1;
+  background-color: var(--white);
+  border: 1px solid #e2e8f0;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--white);
+  border: 1px solid #e2e8f0;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: var(--primary);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+
+
+
+button[type="submit"] {
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+.contact-details {
+  margin-top: 60px;
+  background: var(--white);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.025);
+  border: 1px solid #e5e7eb;
+}
+
+.contact-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--gray);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .intro-letter,
+  .contact-form {
+    padding: 20px;
+  }
+}

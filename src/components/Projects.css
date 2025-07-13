@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #2563eb;
+  --card-bg: #ffffff;
+  --section-bg: #f8fafc;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e2e8f0;
+  --font-heading: "Segoe UI", "Inter", sans-serif;
+  --font-body: "Inter", "Roboto", sans-serif;
+}
+
+.projects-section {
+  padding: 80px 40px;
+  background: var(--section-bg);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
+
+.projects-header .subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 32px 36px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.project-header h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  font-family: var(--font-heading);
+}
+
+.project-header .meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.badge {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.tech-tags {
+  margin: 14px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.highlights {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.highlights li {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 20px;
+  }
+
+  .project-card {
+    padding: 24px;
+  }
+
+  .projects-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-header h2 {
+    font-size: 1.5rem;
+  }
+}
