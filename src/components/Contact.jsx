@@ -1,8 +1,36 @@
 // src/components/Contact.jsx
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, message } = formData;
+
+    const subject = encodeURIComponent("Portfolio Contact from " + name);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
+
+    // This opens Gmail or default email app with pre-filled values
+    window.location.href = `mailto:abhaysati234@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section className="contact-section">
       <h1 className="contact-heading"> OPEN TO OPPORTUNITIES </h1>
@@ -23,20 +51,41 @@ function Contact() {
           <p>Sincerely,<br />Abhay Sati</p>
         </div>
 
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
-            <input type="text" id="name" placeholder="Your Name" required />
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
           </div>
 
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
-            <input type="email" id="email" placeholder="you@example.com" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
           </div>
 
           <div className="form-group">
             <label htmlFor="message">Message</label>
-            <textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="How can I help you?"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
           </div>
 
           <button type="submit">Send Message</button>

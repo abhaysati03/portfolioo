@@ -25,7 +25,7 @@ function Home() {
       </section>
 
 <section className="highlight-section">
-  <h2>🚀 What This Project Covers</h2>
+  <h2> What This Project Covers</h2>
   <div className="highlight-list">
     {highlights.map((item, index) => (
       <div key={index} className="highlight-item">

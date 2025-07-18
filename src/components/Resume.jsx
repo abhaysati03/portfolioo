@@ -7,7 +7,7 @@ function Resume() {
     <div className="gow-resume">
       <header className="gow-header">
         <h1>ABHAY SATI</h1>
-        <p>📞 +91-8006122006 | ✉️ abhaysati234@gmail.com</p>
+        <p> +91-8006122006 |  abhaysati234@gmail.com</p>
         <a
           href="https://www.linkedin.com/in/abhay-sati-79506a35b/"
           target="_blank"
@@ -18,7 +18,7 @@ function Resume() {
       </header>
 
       <section className="gow-section">
-        <h2>⚔️ Education</h2>
+        <h2> Education</h2>
         <div className="gow-block">
           <strong>B.Tech, Computer Science</strong> – Quantum University, India
           <span className="date"> Sep 2021 – Jul 2025 </span>
@@ -30,7 +30,7 @@ function Resume() {
       </section>
 
       <section className="gow-section">
-        <h2>🔥 Profile Summary</h2>
+        <h2> Profile Summary</h2>
         <p>
           Full Stack Developer passionate about crafting immersive, scalable web
           applications. Experienced with React.js, Node.js, MongoDB, and clean UI
@@ -40,20 +40,20 @@ function Resume() {
       </section>
 
       <section className="gow-section">
-        <h2>🛠️ Technical Skills</h2>
+        <h2> Technical Skills</h2>
         <div className="gow-technical">
         <ul>
-          <li> Languages: HTML, CSS, JavaScript, Python, SQL </li>
+          <li> Languages: HTML, CSS, JavaScript, Python, SQL, Apex </li>
           <li> Frameworks: React.js, Node.js </li>
           <li> Databases: MongoDB, MySQL </li>
-          <li> Tools: Git, GitHub, Postman, VS Code </li>
+          <li> Tools: GitHub, VS Code </li>
           <li> Concepts: SPA Architecture, REST APIs, UI/UX Design </li>
         </ul>
         </div>
       </section>
 
       <section className="gow-section">
-        <h2>🏹 Experience</h2>
+        <h2> Experience</h2>
         <div className="gow-block">
           <strong>Full Stack Developer Intern</strong><br />
           FEB TECH IT SOLUTION PVT. LTD., Roorkee<br />
@@ -67,7 +67,7 @@ function Resume() {
       </section>
 
       <section className="gow-section">
-        <h2>🧩 Projects</h2>
+        <h2> Projects</h2>
         <div className="gow-block">
           <strong>Flyway Realms</strong> – React.js, CSS
           <ul>
@@ -92,7 +92,7 @@ function Resume() {
       </section>
 
       <section className="gow-section">
-        <h2>🌍 Languages</h2>
+        <h2> Languages</h2>
         <div className="gow-lang">
         <ul>
           <li>English – Proficient</li>
