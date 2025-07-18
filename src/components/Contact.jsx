@@ -9,6 +9,7 @@ function Contact() {
     message: ""
   });
 
+  // ✅ This must be defined inside the component
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prev) => ({
@@ -19,17 +20,17 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const { name, email, message } = formData;
-
     const subject = encodeURIComponent("Portfolio Contact from " + name);
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
-
-    // This opens Gmail or default email app with pre-filled values
-    window.location.href = `mailto:abhaysati234@gmail.com?subject=${subject}&body=${body}`;
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=abhaysati234@gmail.com&su=${subject}&body=${body}`;
+    window.open(gmailURL, "_blank");
   };
+
+
+
 
   return (
     <section className="contact-section">
